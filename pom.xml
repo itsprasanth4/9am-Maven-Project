@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.jdevs</groupId>
-  <artifactId>Cloud-DevOps</artifactId>
+  <artifactId>Prasanth-DevOps</artifactId>
   <version>1</version> 
   <packaging>war</packaging>
   <build>
@@ -33,12 +33,12 @@
         <repository>
             <id>deployment</id>
             <name>Internal Releases</name>
-            <url>http://192.168.180.138:8081/repository/Prasanth_Release/</url>
+            <url>http://192.168.180.151:8081/repository/Prasanth_Release/</url>
         </repository>
         <snapshotRepository>
             <id>deployment</id>
             <name>Internal Snapshot Releases</name>
-            <url>http://192.168.180.138:8081/repository/Prasanth_Snap/</url>
+            <url>http://192.168.180.151:8081/repository/Prasanth_Snap/</url>
         </snapshotRepository>
     </distributionManagement>
   <dependencies>
