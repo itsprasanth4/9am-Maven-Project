@@ -33,12 +33,12 @@
         <repository>
             <id>deployment</id>
             <name>Internal Releases</name>
-            <url>http://192.168.180.151:8081/repository/Prasanth_Release/</url>
+            <url>http://192.168.180.164:8081/repository/Prasanth_Release/</url>
         </repository>
         <snapshotRepository>
             <id>deployment</id>
             <name>Internal Snapshot Releases</name>
-            <url>http://192.168.180.151:8081/repository/Prasanth_Snap/</url>
+            <url>http://192.168.180.164:8081/repository/Prasanth_Snap/</url>
         </snapshotRepository>
     </distributionManagement>
   <dependencies>
