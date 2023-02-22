@@ -8,7 +8,7 @@ pipeline{
 		stage ('checkout')
 		{
 			steps{
-				git branch: 'main', url:' https://github.com/Cloud-Devops-Automation/8AM-Maven-Project.git'
+				git branch: 'main', url:' https://github.com/itsprasanth4/9AM-Maven-Project.git'
 			}
 		}
 
@@ -20,15 +20,15 @@ pipeline{
 		}
 		stage('Build Docker Image'){
 			steps{
-			sh 'docker build -t coloud-web-app:latest .'
-			sh 'docker tag coloud-web-app thanish/coloud-web-app:latest'
+			sh 'docker build -t java-web-app:latest .'
+			sh 'docker tag java-web-app itsprasanth4/java-web-app:latest'
 		}
 }
 		stage('Pushing the image to Docker Hub'){
 			steps{
 				withDockerRegistry([credentialsId:"dockerHub",url: " "])
 				{
-					sh 'docker push thanish/coloud-web-app:latest'
+					sh 'docker push itsprasanth4/java-web-app:latest'
 				}
 			}
 }
